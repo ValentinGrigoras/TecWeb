@@ -128,7 +128,8 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid transparent;
-    color: #da0f16;
+    color: #c2c2c2;
+    font-weight: 400;
 }
 /* SEZIONE train with us*/
 .section-features{
@@ -151,4 +152,16 @@ header {
     display: block;
     color: #da0f16;
     margin-bottom: 10px;
+}
+
+/* prova section*/
+
+.prova {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/prova-section.jpg.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/prova-section.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      background-attachment: fixed;
+
 }
