@@ -15,10 +15,23 @@ html,
 body {
     background-color: #fff;
     color: #1e272e;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: 'Karla', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
 }
+/* ----------------------------------------------- */
+/*proprietà grid */
+/* ----------------------------------------------- */
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* ----------------------------------------------- */
 /*COMPONENTI RIUSABILI */
 /* ----------------------------------------------- */
@@ -27,8 +40,9 @@ body {
     margin: 0 auto;
 }
 section {
-    padding: 50px 0;
+    padding: 20px 0;
 }
+
 /* ----------------------------------------------- */
 /*INTESTAZIONI */
 /* ----------------------------------------------- */
@@ -66,6 +80,10 @@ h2:after {
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
+    font-weight: 700;
+}
+h4{
+  margin: 0;
 }
 /* ----- PARAGRAFI ----- */
 .long-copy {
@@ -110,26 +128,67 @@ header {
 .main-nav li {
     display: inline-block;
     margin-left: 40px;
+    font-weight: 400;
 }
 
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 8px 0;
     color: #fff;
-    text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
-    border-bottom: 2px solid #da0f16;
-
-    -webkit-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid transparent;
     color: #c2c2c2;
-    font-weight: 400;
+    text-decoration: none;
+}
+.main-nav li .btn:link,
+.main-nav li .btn:visited {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+.btn:link,
+.btn:visited{ /*stile comune dei 2 bottoni*/
+  display: inline-block;/* in modo da poterli dare le proprietà margin e padding*/
+  padding: 10px 30px;
+  font-weight: 300;
+  font-size: 90%;
+  transition: background-color 0.2, color 0.2;/*proprietà del css 3. c'è la transizione da un colore ad un altro. In pratica quando passo il mouse sopra un link il colore non cambia instantaneamente ma in un periodo di 0.2 ms*/
+}
+.btn-full:link,
+.btn-full:visited{
+  background-color: #c0392b;
+  color: #fff;
+  border-radius: 60px;
+}
+.btn-login:link,
+.btn-login:visited{
+  background-color: #c0392b;
+  color: #fff;
+}
+.btn-full:hover,
+.btn-full:active{
+  background-color: #7b241b;
+  color: #fff;
+  text-decoration: none;
+}
+.main-nav li:nth-last-child(1){ /* solo l'ultimo elemento di tipo div*/
+  font-size: 100%;
+  padding: 0;
+  font-weight: 700;
+}
+.main-nav li a:nth-last-child(1){
+    padding: 8px 5px;
+}
+.hero-text-box{
+  position: absolute; /* serve per centrarla verticalemnte e orizzontalmente*/
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* trasla il div metà della sua larghezza e della sua altezza in su e a sinistra*/
 }
 /* SEZIONE train with us*/
 .section-features{
@@ -150,18 +209,56 @@ header {
 .icon-big {
     font-size: 350%;
     display: block;
-    color: #da0f16;
+    color: #c0392b;
     margin-bottom: 10px;
 }
 
 /* prova section*/
 
-.prova {
+.personal-trainer {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/prova-section.jpg.jpg);
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/prova-section.jpg);
       background-size: cover;
       background-position: center;
-      height: 100vh;
+      height: 50vh;
       background-attachment: fixed;
+}
+.prova{
+    background-color: #f5f5f5;
+    height: 100vh;
+    font-size: 80%;
+}
+.prova h1{
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color:#000;
+}
+.prova .col:first-child {
+    margin-left: 0;
+}
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
 
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }

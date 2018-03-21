@@ -4,24 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Palestra </title>
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
   <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 </head>
 <body>
 <header>
-  <div class="row">
-                    .<img src="resources/img/logo2.png" alt="Logo Palestra" class="logo">
-                    <ul class="main-nav">
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#Corsi">Corsi</a></li>
-                        <li><a href="#PersonalTrainer">Personl Trainers</a></li>
-                        <li><a href="#Prezzi">Prezzi</a></li>
-                        <li><a href="#Contattaci">Contattaci</a></li>
-                    </ul>
-                </div>
+  <nav>
+    <div class="row">
+                      .<img src="resources/img/logo2.png" alt="Logo Palestra" class="logo">
+                      <ul class="main-nav">
+                          <li><a href="#Home">Home</a></li>
+                          <li><a href="#Corsi">Corsi</a></li>
+                          <li><a href="#PersonalTrainer">Personal Trainers</a></li>
+                          <li><a href="#Prezzi">Prezzi</a></li>
+                          <li><a href="#Contattaci">Contattaci</a></li>
+                          <li><a href="#Login" class="btn btn-login">Login</a></li>
+                      </ul>
+    </div>
+  </nav>
+  <div class="hero-text-box">
+      <h1>Il vero fallimento è rinunciare<br>Unisciti a noi</h1>
+      <a class="btn btn-full" href="#">Iscriviti</a>
+  </div>
 </header>
 <section class="section-features">
           <div class="row">
@@ -34,23 +41,25 @@
           <div class="row ">
               <div class="col span-1-of-4 box">
                   <i class="ion-ios-people  icon-big"></i>
-                  <h3>ALLENAMENTI DI GRUPPO</h3>
+                  <h3>ADDOMINALI</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam consequatur excepturi minus repellat quas est non enim, odit consectetur officia, facere, quis, libero saepe placeat.
+                    I muscoli dell'addome racchiudono, sostengono e proteggono alcuni degli organi più importanti del nostro corpo. Mantenere tali muscoli in perfetta forma significa conservare in condizioni ottimali tutti gli organi contenuti nella cavità addominale.
                   </p>
               </div>
               <div class="col span-1-of-4 box">
-                  <i class="ion-ios-body  icon-big"></i>
-                  <h3>FREESTYLE</h3>
+                  <i class="ion-android-walk  icon-big"></i>
+                  <h3>GINNASTICA POSTUREALE</h3>
                   <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum corporis accusantium quae at, iure aspernatur ea nam tempore, mollitia placeat, vel expedita dolore incidunt eveniet.
+                    La ginnastica posturale ha lo scopo di allenare il corpo per eliminare le posture errate causa di dolori articolari.
+                    Eseguendo esercizi attivi aumentiamo le capacità delle articolazioni a svolgere le loro funzioni principali.
                   </p>
               </div>
               <div class="col span-1-of-4 box">
                   <i class="ion-ios-pulse-strong  icon-big"></i>
                   <h3>CARDIO</h3>
                   <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sunt maxime porro libero veritatis. Debitis sed perferendis similique impedit dolorem ex odit nesciunt exercitationem nostrum.
+                      Cardio è un tipo di allenamento che combina esercizi di aerobica, step e gag. L’allenamento si svolge in gruppo e a ritmo di musica
+                      ed è particolarmente efficace nella modellazione di gambe, addome e glutei.
                   </p>
               </div>
               <div class="col span-1-of-4 box">
@@ -63,37 +72,77 @@
           </div>
           <div class="row">
               <div class="col span-1-of-4 box">
-                  <i class="ion-ios-people  icon-big"></i>
-                  <h3>ALLENAMENTI DI GRUPPO</h3>
+                  <i class="ion-android-bicycle  icon-big"></i>
+                  <h3>INDOOR CYCLING</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam consequatur excepturi minus repellat quas est non enim, odit consectetur officia, facere, quis, libero saepe placeat.
                   </p>
               </div>
               <div class="col span-1-of-4 box">
-                  <i class="ion-ios-body  icon-big"></i>
-                  <h3>FREESTYLE</h3>
+                  <i class="ion-ios-loop-strong  icon-big"></i>
+                  <h3>CIRCUITO (FITNESS)</h3>
                   <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum corporis accusantium quae at, iure aspernatur ea nam tempore, mollitia placeat, vel expedita dolore incidunt eveniet.
                   </p>
               </div>
               <div class="col span-1-of-4 box">
-                  <i class="ion-ios-pulse-strong  icon-big"></i>
-                  <h3>CARDIO</h3>
+                  <i class="ion-music-note  icon-big"></i>
+                  <h3>ZUMBA</h3>
                   <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sunt maxime porro libero veritatis. Debitis sed perferendis similique impedit dolorem ex odit nesciunt exercitationem nostrum.
                   </p>
               </div>
               <div class="col span-1-of-4 box">
-                  <i class="ion-android-hand  icon-big"></i>
-                  <h3>FORZA</h3>
+                  <i class="ion-ios-recording  icon-big"></i>
+                  <h3>FREESTYLE</h3>
                   <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit, aspernatur? Beatae, nobis. Nesciunt aut laborum natus, delectus, error ipsa distinctio assumenda laboriosam dolor maxime.
                   </p>
               </div>
           </div>
       </section>
+      <section class="personal-trainer">
+      </section>
+
       <section class="prova">
+        <div class="row">
+            <h2>I nostri personal trainer</h2>
+            <p class="long-copy">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, debitis eligendi rem dolores soluta eveniet doloribus deserunt, explicabo delectus excepturi amet autem voluptatum facere pariatur.
+            </p>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-4 box">
+            <figure class="meal-photo">
+              <img src="resources/img/pt1.jpeg" alt="Avatar">
+            </figure>
+            <h4><b>John Doe</b></h4>
+            <p>Architect & Engineer</p>
+          </div>
+          <div class="col span-1-of-4 box">
+            <figure class="meal-photo">
+              <img src="resources/img/pt3.jpeg" alt="Avatar">
+            </figure>
+            <h4><b>John Doe</b></h4>
+            <p>Architect & Engineer</p>
+          </div>
+          <div class="col span-1-of-4 box">
+            <figure class="meal-photo">
+              <img src="resources/img/pt2.jpeg" alt="Avatar">
+            </figure>
+            <h4><b>John Doe</b></h4>
+            <p>Architect & Engineer</p>
+          </div>
+          <div class="col span-1-of-4 box">
+            <figure class="meal-photo">
+              <img src="resources/img/pt4.jpeg" alt="Avatar">
+            </figure>
+            <h4><b>John Doe</b></h4>
+            <p>Architect & Engineer</p>
+          </div>
+        </div>
 
       </section>
+
 </body>
 </html>
