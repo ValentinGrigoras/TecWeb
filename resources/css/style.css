@@ -92,7 +92,7 @@ h4{
 .long-copy {
     line-height: 145%;
     width: 70%;
-    margin-left: 15%;
+    margin: 0 auto;
     margin-top:20px;
 }
 
@@ -104,30 +104,40 @@ h4{
 
 header {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(img/header2.jpg);
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(img/header2.jpg);
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;
-      max-height: auto;
-      min-width: 100vw;
-      background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(img/header2.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  max-height: auto;
+  min-width: 100vw;
+  background-attachment: fixed;
 }
 
 .box {
     padding: 1%;
 }
 .logo {
-    height: 100px;
+    height: 60px;
     width: auto;
     float: left;
-    margin-top: 20px;
+    margin-top: 1%;
 
 }
 /* NAVIGAZIONE PRINCIPALE */
+nav {
+    overflow: hidden;
+    background: rgba(0, 0,0, 0.8);/* Green background with 30% opacity */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: auto;
+    max-height: auto;
+    z-index: 100;
+}
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 45px;
+    margin-top: 1%;
 }
 
 .main-nav li {
@@ -140,6 +150,7 @@ header {
     padding: 8px 0;
     color: #fff;
     font-size: 90%;
+    text-transform: uppercase;
 }
 
 .main-nav li a:hover,
@@ -152,6 +163,11 @@ header {
     color: #fff;
     font-size: 90%;
 }
+.main-nav li .btn:hover,
+.main-nav li .btn:active {
+    color: #c2c2c2;
+    font-size: 90%;
+}
 
 .btn:link,
 .btn:visited{ /*stile comune dei 2 bottoni*/
@@ -161,6 +177,7 @@ header {
   font-size: 90%;
   transition: background-color 0.2, color 0.2;/*proprietà del css 3. c'è la transizione da un colore ad un altro. In pratica quando passo il mouse sopra un link il colore non cambia instantaneamente ma in un periodo di 0.2 ms*/
   cursor:pointer;
+  color: #fff;
 }
 .btn-full:link,
 .btn-full:visited{
@@ -170,20 +187,19 @@ header {
 }
 .btn-login:link,
 .btn-login:visited{
-  background-color: #e62d18;
+  border: 2px solid #e62d18;
   color: #fff;
   border-radius: 60px;
+  text-transform: uppercase;
+  background-color: #7b241b;
+  text-decoration: none;
 }
 .btn-full:hover,
 .btn-full:active{
   background-color: #7b241b;
   text-decoration: none;
 }
-.btn-login:hover,
-.btn-login:active{
-  background-color: #7b241b;
-  text-decoration: none;
-}
+
 .last{ /* solo l'ultimo elemento di tipo div*/
   font-size: 100%;
   padding: 10px 30px;;
@@ -200,7 +216,7 @@ header .row h1{
   font-size: 260%;
 }
 .slogan{
-  margin-top: 10%;
+  padding-top: 20%;
 }
 }
 .hero-text-box{
@@ -212,7 +228,7 @@ header .row h1{
   margin-top: 30px;
 }
 /* SEZIONE train with us*/
-.section-features{
+.section-corsi{
   background-color: #f7f7f7;
 
 /*  max-height: auto;*/ /*aumenta finche il contenuto sta dentro il contenitore*/
@@ -221,11 +237,11 @@ header .row h1{
   /*overflow: hidden;*/
 }
 
-.section-features h2{
+.section-corsi h2{
   background-color: #f7f7f7;
   font-weight: 400;
 }
-.prova .long-copy {
+.trainers .long-copy {
     margin-bottom: 50px;
     color: #000;
 }
@@ -249,7 +265,7 @@ header .row h1{
     vertical-align: middle;
     margin-top: -5px;
 }
-/* prova section*/
+/* trainers section*/
 
 .personal-trainer {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(img/prova-section2.jpg.jpg);
@@ -259,27 +275,28 @@ header .row h1{
       height: 50vh;
       background-attachment: fixed;
 }
-.prova{
+.trainers{
     background-color: #f7f7f7;
     color: #000;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: auto;
     font-size: 90%;
 }
-.prova .long-copy{
+.trainers .long-copy{
   margin-top: 60px;
 }
-.prova h2{margin-top: 30px;}
-.prova .col:first-child {
+.trainers h2{margin-top: 30px;}
+.trainers .col:first-child {
     margin-left: 0;
 }
-.meal-photo {
+.pt-photo {
     width: 100%;
     margin: 0;
     overflow: hidden;
     background-color: #000;
 }
 
-.meal-photo img {
+.pt-photo img {
     opacity: 0.7;
     width: 100%;
     height: auto;
@@ -289,7 +306,7 @@ header .row h1{
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
 }
-.meal-photo img:hover {
+.pt-photo img:hover {
     opacity: 1;
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
@@ -297,11 +314,11 @@ header .row h1{
 }
 .personal-trainer2 {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(img/prova-section3.jpg.jpg);
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(img/prova-section3.jpg);
-      background-size: cover;
-      background-position: center;
-      height: 50vh;
-      background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(img/prova-section3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  background-attachment: fixed;
 }
 
 /*abbonamenti*/
@@ -337,21 +354,18 @@ header .row h1{
     text-align: center;
     border: 0;
 }
-
-
 .plan-price {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
     color: #e62d18;
 }
-
 .plan-price span {
     font-size: 30%;
     font-weight: 300;
 }
 
-.plan-price-meal {
+.plan-price-abb {
     font-size: 80%;
 }
 
@@ -361,4 +375,104 @@ header .row h1{
 
 .plan-box ul li {
     padding: 5px 0;
+}
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    font-size: 120%;
+}
+.center{
+text-align: center;
+}
+.social-links {
+    list-style: none;
+    float: right;
+    font-size: 120%;
+    padding-right: 20%;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+.indirizzo{
+  float:right;
+  font-size: 120%;
+  list-style: none;
+  padding-right: 20%;
+
+}
+.indirizzo li span{
+  border: 0;
+  color: #888;
+}
+.indirizzo li span a{
+  color:#888;
 }
