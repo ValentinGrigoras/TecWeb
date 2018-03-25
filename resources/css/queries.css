@@ -1,0 +1,169 @@
+/*da grandi tablet - fino a 1200px (la mia riga ha 1140px).
+Queste regole vengono applicate quando la larghezza del browser
+è al massimo 1200px.*/
+@media only screen and (max-width: 1200px){
+.slogan{
+    width:100%;
+  }
+}
+
+/*da piccoli tablet a grandi tablet, ovvero da 768px a 1023px.
+Queste regole vengono applicate quando la larghezza del browser
+è al massimo 1023px, ovvero ipad in modalità portrait*/
+@media only screen and (max-width: 1023px){
+body{font-size: 18px;}
+section{padding: 10px 0;}
+.slogan{
+  padding-top: 35%;
+}
+.long-copy {
+    width: 80%;
+    margin-top:1 0px;
+}
+.icon-small{
+  width: 20px;
+  font-size: 110%;
+  margin-right: 5px;
+}
+.section-plans {
+font-size: 80%;
+}
+.plan-price-abb {
+    font-size: 75%;
+}
+.plan-price {
+    font-size: 240%;
+}
+h1{
+  font-size: 180%;
+}
+.plan-box{
+  width: 100%;
+  margin-left: 0;
+}
+.section-form{
+font-size: 80%;
+}
+.contact-form{
+  width: 80%;
+}
+}
+/*da piccoli smartphone a piccoli tablet, ovvero da 481px a 767px.
+Queste regole vengono applicate quando la larghezza del browser
+è al massimo 767px. Per esempio tutti i smartphone con schermo più
+piccolo del ipad*/
+@media only screen and (max-width: 767px){
+body{
+  font-size: 17px;
+}
+section{padding: 10px 0;}
+.col{
+  width: 100%;
+  margin: 0 0 5% 0;
+}
+h1{
+margin-top: 40%;
+font-size: 210%;
+}
+h2{
+font-size: 150%;
+}
+.row{
+  padding: 0 4%;
+}
+.long-copy{
+  width: 100%;
+  margin-left: 0%;
+}
+
+.plan-box{
+  width: 70%;
+  margin: 0 auto;
+}
+footer {
+    font-size: 60%;
+}
+/*
+header{
+  min-height: 60vh;
+}*/
+.pt-photo {
+    max-height:90vh;
+    width: auto;
+    margin: 0 auto;
+}
+.main-nav{
+  display: none;
+}
+.personal-trainer,
+.personal-trainer2,
+.personal-trainer3
+ {
+  height: 30vh;
+}
+footer { font-size: 70%;}
+.footer-nav{float: none;}
+.footer-nav li{
+  margin: 0 auto;
+}
+.social-links{
+float: none;
+padding: 0;}
+.social-links li{
+  margin: 0 auto;
+}
+.indirizzo{
+float: none;
+padding: 0;}
+
+}
+
+/*piccoli smartphone 0-480px.
+Queste regole vengono applicate quando la larghezza del browser
+è al massimo 480px. Per esempio iphone 5,4*/
+@media only screen and (max-width: 480px){
+  body{
+    font-size: 16px;
+  }
+  h1{
+  font-size: 160%;
+  }
+  header{
+    min-height: 60vh;
+    max-height: auto;
+    font-size: 90%;
+  }
+  section{padding: 5px 0;}
+  .pt-photo {
+      max-height:90vh;
+      width: auto;
+      margin: 0 auto;
+  }
+  .plan-box{
+    width: 100%;
+  }
+  .personal-trainer,
+  .personal-trainer2,
+  .personal-trainer3
+   {
+    height: 20vh;
+  }
+  .contact-form{
+    width: 100%;
+  }
+  footer { font-size: 70%;}
+  .footer-nav{float: none;}
+  .footer-nav li{
+    margin: 0 auto;
+  }
+  .social-links{
+  float: none;
+  padding: 0;}
+  .social-links li{
+    margin: 0 auto;
+  }
+  .indirizzo{
+  float: none;
+  padding: 0;}
+
+}
