@@ -17,10 +17,10 @@
     <div class="row">
                       <a href="index.html"><img src="resources/img/logo2.png" alt="Logo Palestra" class="logo"></a>
                       <ul class="main-nav">
-                          <li><a href="#Home">Home</a></li>
-                          <li><a href="#Corsi">Corsi</a></li>
+                          <li><a href="#Home" class="js--inizio">Home</a></li>
+                          <li><a href="#Corsi" class="js--corsi">Corsi</a></li>
                           <li><a href="#PersonalTrainer">Personal Trainers</a></li>
-                          <li><a href="#Prezzi">Prezzi</a></li>
+                          <li><a href="#Prezzi" class="js--prezzi">Prezzi</a></li>
                           <li><a href="#Contattaci">Contattaci</a></li>
                           <li class="last"><a href="#Login" class="btn btn-login">Area personale</a></li>
                       </ul>
@@ -28,11 +28,11 @@
   </nav>
   <div class="row slogan">
         <h1>Il vero fallimento è rinunciare!<br>Unisciti a JustFit</h1>
-        <a class="btn btn-full" href="#">Scopri le nostre offerte</a>
+        <a class="btn btn-full js--scroll-alle-offerte" href="#">Scopri le nostre offerte</a>
   </div>
 
 </header>
-<section class="section-corsi">
+<section class="section-corsi js--sezione-corsi">
   <div class="row">
       <h2 class="allenati">Allenati con noi</h2>
       <p class="long-copy">
@@ -147,7 +147,7 @@
       <div class="personal-trainer2">
       </div>
 
-      <section class="section-plans" id="plans">
+      <section class="section-plans js--section-plans" id="plans">
           <div class="row">
               <h2>Devi iniziare per essere grande</h2>
           </div>
@@ -211,7 +211,6 @@
               </div>
           </div>
       </section>
-<<<<<<< HEAD
       <section class="personal-trainer3">
 
       </section>
@@ -277,8 +276,7 @@
           </form>
         </div>
       </section>
-=======
->>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
+
       <footer>
           <div class="row">
               <div class="col span-1-of-3">
@@ -287,8 +285,7 @@
                       <li><a href="#">Blog</a></li>
                   </ul>
               </div>
-<<<<<<< HEAD
-=======
+
 
               <div class="col span-1-of-3">
                   <ul class="social-links center">
@@ -317,7 +314,6 @@
           </div>
       </footer>
 
->>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 
               <div class="col span-1-of-3">
                   <ul class="social-links center">
@@ -345,9 +341,13 @@
               </p>
           </div>
       </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- script per  browsers vecchi-->
+      <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+      <!-- script per  browsers vecchi. Mi interpreta i tag html5 -->
+      <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <!-- script per  browsers vecchi com IE 6, 7, 8. Ci permette di usare le classi css3 come "last-child, first-child" -->
+      <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+      <script src="resources/js/script.js"></script>
 </body>
-<!-- script per  browsers vecchi-->
-<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-<!-- script per  browsers vecchi. Mi interpreta i tag html-->
-<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
 </html>
