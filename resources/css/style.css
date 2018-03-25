@@ -110,8 +110,13 @@ h3 {
 }
 /* ----- HEADER ----- */
 header {
+<<<<<<< HEAD
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9))), url(img/header2.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(img/header2.jpg);
+=======
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(img/header2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(img/header2.jpg);
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -127,6 +132,10 @@ header {
     width: auto;
     float: left;
     margin-top: 1%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 }
 /* NAVIGAZIONE PRINCIPALE */
 nav {
@@ -170,6 +179,10 @@ nav {
     color: #c2c2c2;
     font-size: 90%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 .btn:link,
 .btn:visited,
 input[type=submit]{ /*stile comune dei bottoni*/
@@ -205,11 +218,16 @@ input[type=submit]{
   text-decoration: none;
 }
 .btn-full:hover,
+<<<<<<< HEAD
 .btn-full:active,
 input[type=submit]:hover{
+=======
+.btn-full:active{
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
   background-color: #7b241b;
   text-decoration: none;
 }
+
 .last{ /* solo l'ultimo elemento di tipo div*/
   font-size: 100%;
   padding: 10px 30px;
@@ -223,8 +241,24 @@ header .row{
 }
 .slogan{
   padding-top: 20%;
+<<<<<<< HEAD
   width:auto;
 }
+=======
+}
+}
+.hero-text-box{
+  max-width: 100vw;
+  max-height: 100vh;
+  transform: translate(25%, 100%); /* trasla il div metà della sua larghezza e della sua altezza in su e a sinistra*/
+}
+.allenati{
+  margin-top: 30px;
+}
+/* SEZIONE train with us*/
+.section-corsi{
+  background-color: #f7f7f7;
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 
 
 /* ------SEZIONE CORSI-------*/
@@ -235,8 +269,19 @@ header .row{
   font-size: 90%;
   /*overflow: hidden;*/
 }
+<<<<<<< HEAD
 .allenati{
   margin-top: 30px;
+=======
+
+.section-corsi h2{
+  background-color: #f7f7f7;
+  font-weight: 400;
+}
+.trainers .long-copy {
+    margin-bottom: 50px;
+    color: #000;
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 }
 .icon-big {
     font-size: 350%;
@@ -244,6 +289,23 @@ header .row{
     color: #e62d18;
     margin-bottom: 10px;
 }
+<<<<<<< HEAD
+=======
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+/* trainers section*/
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 
 /*---------SEZIONE ALLENATORI----------*/
 .trainers .long-copy {
@@ -260,6 +322,10 @@ header .row{
 .trainers .long-copy{
   margin-top: 60px;
 }
+<<<<<<< HEAD
+=======
+.trainers h2{margin-top: 30px;}
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 .trainers .col:first-child {
     margin-left: 0;
 }
@@ -299,6 +365,7 @@ header .row{
       background-attachment: fixed;
 }
 .personal-trainer2 {
+<<<<<<< HEAD
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.1))), url(img/prova-section3.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(img/prova-section3.jpg);
   background-size: cover;
@@ -313,6 +380,14 @@ header .row{
       background-position: center;
       height: 40vh;
       background-attachment: fixed;
+=======
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(img/prova-section3.jpg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(img/prova-section3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  background-attachment: fixed;
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 }
 
 /*sezione abbonamenti*/
@@ -354,6 +429,10 @@ header .row{
     font-size: 30%;
     font-weight: 300;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 .plan-price-abb {
     font-size: 80%;
 }
@@ -363,6 +442,7 @@ header .row{
 .plan-box ul li {
     padding: 5px 0;
 }
+<<<<<<< HEAD
 .icon-small {
     display: inline-block;
     width: 30px;
@@ -384,6 +464,19 @@ footer {
     font-size: 80%;
     height: auto;
 }
+=======
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 .footer-nav {
     list-style: none;
     float: left;
@@ -398,6 +491,10 @@ text-align: center;
     font-size: 120%;
     padding-right: 20%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 .footer-nav li,
 .social-links li {
     display: inline-block;
@@ -408,6 +505,10 @@ text-align: center;
 .social-links li:last-child {
     margin-right: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 .footer-nav li a:link,
 .footer-nav li a:visited,
 .social-links li a:link,
@@ -417,15 +518,27 @@ text-align: center;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 .footer-nav li a:hover,
 .footer-nav li a:active {
     color: #ddd;
     text-decoration: none;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 .social-links li a:link,
 .social-links li a:visited {
     font-size: 160%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-googleplus,
@@ -433,6 +546,7 @@ text-align: center;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
+<<<<<<< HEAD
 .ion-social-facebook:hover {
     color: #3b5998;
 }
@@ -442,6 +556,21 @@ text-align: center;
 .ion-social-googleplus:hover {
     color: #dd4b39;
 }
+=======
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 .ion-social-instagram:hover {
     color: #517fa4;
 }
@@ -455,6 +584,10 @@ footer p {
   font-size: 120%;
   list-style: none;
   padding-right: 20%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
 }
 .indirizzo li span{
   border: 0;
@@ -463,6 +596,7 @@ footer p {
 .indirizzo li span a{
   color:#888;
 }
+<<<<<<< HEAD
 
 /*------Contattaci---*/
 .section-form{
@@ -493,3 +627,5 @@ input[type=checkbox]{
   margin: 10px 5px 10px 0;
 
 }
+=======
+>>>>>>> 9c3ce67267059939124343d77fc1fbf038757dbb
